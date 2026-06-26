@@ -6,7 +6,7 @@ packaged for Linux devices and Apple Silicon Macs
 1. Add the repository to your flake inputs:
 ```nix
 musicpresence = {
-    url = "https://github.com/itsyunaya/musicpresence-flake.git";
+    url = "github:itsyunaya/musicpresence-flake";
     inputs.nixpkgs.follows = "nixpkgs";
 };
 ```
