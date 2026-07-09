@@ -21,7 +21,7 @@ stdenv.mkDerivation {
 
 	src = fetchzip {
 		url = "https://github.com/ungive/discord-music-presence/releases/download/v${version}/musicpresence-${version}-linux-x86_64.tar.gz";
-		hash = "sha256-IkGn6y7cHi32hIVEUWJ5XdupJ+DvAYRoGQfAV/55bn8=";
+		hash = "sha256-MUGFGEJwXcx66G8sJPvOlmpuoM9B7/PsPG6MnlKt/8M=";
 	};
 
 	nativeBuildInputs = [ autoPatchelfHook makeWrapper ];

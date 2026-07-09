@@ -4,7 +4,7 @@ stdenvNoCC.mkDerivation {
 
 	src = fetchurl {
 		url = "https://github.com/ungive/discord-music-presence/releases/download/v${version}/musicpresence-${version}-mac-arm64.dmg";
-		hash = "sha256-GKZ6XIGhyvS2+A0s057W6H1bm+FDrWbMOY6WnJZxBKE=";
+		hash = "sha256-IvUyzR9amMhyWHRuhTuqUFALCE3QTRjHmsASKydnj8Q=";
 	};
 
 	nativeBuildInputs = [ undmg ];

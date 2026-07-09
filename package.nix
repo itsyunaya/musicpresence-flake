@@ -1,7 +1,7 @@
 { lib, stdenv, callPackage }: let
 	common = {
 		pname = "musicpresence";
-		version = "2.3.5";
+		version = "2.3.6";
 
 		meta = {
 			description = "The Discord music status that works with any media player";
