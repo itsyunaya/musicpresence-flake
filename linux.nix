@@ -6,8 +6,8 @@
 	libgcc,
 	libGL,
 	libgpg-error,
-	libxcb,
 	libx11,
+	libxcb,
 	makeWrapper,
 	meta,
 	pname,
@@ -17,7 +17,7 @@
 	xkeyboard_config
 }:
 stdenv.mkDerivation {
-	inherit pname version;
+	inherit pname version meta;
 
 	src = fetchzip {
 		url = "https://github.com/ungive/discord-music-presence/releases/download/v${version}/musicpresence-${version}-linux-x86_64.tar.gz";
@@ -32,8 +32,8 @@ stdenv.mkDerivation {
 		libgcc
 		libGL
 		libgpg-error
-		libxcb
 		libx11
+		libxcb
 		wayland
 		stdenv.cc.cc.lib
 	];
@@ -46,9 +46,4 @@ stdenv.mkDerivation {
     		--set XKB_CONFIG_ROOT "${xkeyboard_config}/share/X11/xkb"
     	runHook postInstall
 	'';
-
-	meta = meta // {
-		mainProgram = "musicpresence";
-		platforms = [ "x86_64-linux" ];
-	};
 }

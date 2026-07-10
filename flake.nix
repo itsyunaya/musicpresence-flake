@@ -14,7 +14,7 @@
 		packages = forAllSystems (
 			system: let
 				pkgs = nixpkgs.legacyPackages.${system};
-				musicpresence = pkgs.callPackage ./package.nix {};
+				musicpresence = pkgs.callPackage ./package.nix { inherit systems; };
 			in {
 				inherit musicpresence;
 				default = musicpresence;
