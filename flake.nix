@@ -22,7 +22,7 @@
 		);
 
 		overlays.default = final: prev: {
-			musicpresence = final.callPackage ./package.nix {};
+			musicpresence = final.callPackage ./package.nix { inherit systems; };
 		};
 	};
 }
