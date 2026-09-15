@@ -1,3 +1,6 @@
+> [!WARNING]
+> This Flake is now deprecated as Musicpresence has been merged into Nixpkgs.
+
 # musicpresence-flake
 This is a Nix Flake for the [Music Presence](https://musicpresence.app/) app by ungive,
 packaged for Linux devices and Apple Silicon Macs
